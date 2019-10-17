@@ -8,26 +8,29 @@
  |  @license    X11 / MIT License
  |  @copyright  Copyright © 2018 - 2019 SamBrishes, pytesNET <info@pytes.net>
  */
-;(function(factory){
-   if(typeof(define) == "function" && define.amd){
-       define(function(){
-           return function(datetime){ factory(datetime); };
-       });
-   } else {
-       if(typeof(window.tail) != "undefined" && window.tail.DateTime){
-           factory(window.tail.DateTime);
-       }
-   }
-}(function(datetime){
+;
+(function (factory) {
+    if (typeof (define) == "function" && define.amd) {
+        define(function () {
+            return function (datetime) {
+                factory(datetime);
+            };
+        });
+    } else {
+        if (typeof (window.tail) != "undefined" && window.tail.DateTime) {
+            factory(window.tail.DateTime);
+        }
+    }
+}(function (datetime) {
     /*
      |  Translator:     Mohammed Alsiddeeq Ahmed - (https://github.com/mosid)
      |  GitHub:         https://github.com/pytesNET/tail.DateTime/issues/1
      */
     datetime.strings.register("ar", {
         months: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
-        days:   ["الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"],
+        days: ["الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"],
         shorts: ["أحد", "إثن", "ثلا", "أرب", "خمي", "جمع", "سبت"],
-        time:   ["ساعة", "دقيقة", "ثانية"],
+        time: ["ساعة", "دقيقة", "ثانية"],
         header: ["إختر الشهر", "إخنر السنة", "إختر العقد", "إختر الوقت"]
     });
 
@@ -37,9 +40,9 @@
      */
     datetime.strings.register("cs", {
         months: ["Leden", "Únor", "Březen", "Duben", "Květen", "Červen", "Červenec", "Srpen", "Září", "Říjen", "Listopad", "Prosinec"],
-        days:   ["Neděle", "Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota"],
+        days: ["Neděle", "Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota"],
         shorts: ["NE", "PO", "ÚT", "ST", "ČT", "PÁ", "SO"],
-        time:   ["Hodiny", "Minuty", "Sekundy"],
+        time: ["Hodiny", "Minuty", "Sekundy"],
         header: ["Vyberte měsíc", "Vyberte rok", "Vyberte desetiletí", "Vyberte čas"]
     });
 
@@ -49,9 +52,9 @@
      */
     datetime.strings.register("de", {
         months: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
-        days:   ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"],
+        days: ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"],
         shorts: ["SO", "MO", "DI", "MI", "DO", "FR", "SA"],
-        time:   ["Stunden", "Minuten", "Sekunden"],
+        time: ["Stunden", "Minuten", "Sekunden"],
         header: ["Wähle einen Monat", "Wähle ein Jahr", "Wähle ein Jahrzehnt", "Wähle eine Uhrzeit"]
     });
 
@@ -61,9 +64,9 @@
      */
     datetime.strings.register("de_AT", {
         months: ["Jänner", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
-        days:   ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"],
+        days: ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"],
         shorts: ["SO", "MO", "DI", "MI", "DO", "FR", "SA"],
-        time:   ["Stunden", "Minuten", "Sekunden"],
+        time: ["Stunden", "Minuten", "Sekunden"],
         header: ["Wähle einen Monat", "Wähle ein Jahr", "Wähle ein Jahrzehnt", "Wähle eine Uhrzeit"]
     });
 
@@ -73,9 +76,9 @@
      */
     datetime.strings.register("el", {
         months: ["Ιανουάριος", "Φεβρουάριος", "Μάρτιος", "Απρίλιος", "Μάιος", "Ιούνιος", "Ιούλιος", "Αύγουστος", "Σεπτέμβριος", "Οκτώβριος", "Νοέμβριος", "Δεκέμβριος"],
-        days:   ["Κυριακή", "Δευτέρα", "Τρίτη", "Τετάρτη", "Πέμπτη", "Παρασκευή", "Σάββατο"],
+        days: ["Κυριακή", "Δευτέρα", "Τρίτη", "Τετάρτη", "Πέμπτη", "Παρασκευή", "Σάββατο"],
         shorts: ["ΚΥΡ", "ΔΕΥ", "ΤΡΙ", "ΤΕΤ", "ΠΕΜ", "ΠΑΡ", "ΣΑΒ"],
-        time:   ["Ώρες", "Λεπτά", "Δευτερόλεπτα"],
+        time: ["Ώρες", "Λεπτά", "Δευτερόλεπτα"],
         header: ["Επιλογή Μηνός", "Επιλογή Έτους", "Επιλογή Δεκαετίας", "Επιλογή Ώρας"]
     });
 
@@ -85,9 +88,9 @@
      */
     datetime.strings.register("es", {
         months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
-        days:   ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+        days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
         shorts: ["DOM", "LUN", "MAR", "MIÉ", "JUE", "VIE", "SÁB"],
-        time:   ["Horas", "Minutos", "Segundos"],
+        time: ["Horas", "Minutos", "Segundos"],
         header: ["Selecciona un mes", "Seleccione un año", "Seleccione un década", "Seleccione una hora"]
     });
 
@@ -97,9 +100,9 @@
      */
     datetime.strings.register("es_MX", {
         months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
-        days:   ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+        days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
         shorts: ["DO", "LU", "MA", "MI", "JU", "VI", "SÁ"],
-        time:   ["Horas", "Minutos", "Segundos"],
+        time: ["Horas", "Minutos", "Segundos"],
         header: ["Selecciona un Mes", "Selecciona un Año", "Selecciona una Decada", "Selecciona la Hora"]
     });
 
@@ -109,9 +112,9 @@
      */
     datetime.strings.register("fi", {
         months: ["Tammikuu", "Helmikuu", "Maaliskuu", "Huhtikuu", "Toukokuu", "Kesäkuu", "Heinäkuu", "Elokuu", "Syyskuu", "Lokakuu", "Marraskuu", "Joulukuu"],
-        days:   ["Sunnuntai", "Maanantai", "Tiistai", "Keskiviikko", "Torstai", "Perjantai", "Lauantai"],
+        days: ["Sunnuntai", "Maanantai", "Tiistai", "Keskiviikko", "Torstai", "Perjantai", "Lauantai"],
         shorts: ["Su", "Ma", "Ti", "Ke", "To", "Pe", "La"],
-        time:   ["Tunnit", "Minuutit", "Sekuntit"],
+        time: ["Tunnit", "Minuutit", "Sekuntit"],
         header: ["Valitse kuukausi", "Valitse vuosi", "Valitse vuosikymmen", "Valitse aika"]
     });
 
@@ -121,9 +124,9 @@
      */
     datetime.strings.register("fr", {
         months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
-        days:   ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
+        days: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
         shorts: ["DIM", "LUN", "MAR", "MER", "JEU", "VEN", "SAM"],
-        time:   ["Heure", "Minute", "Seconde"],
+        time: ["Heure", "Minute", "Seconde"],
         header: ["Choisissez un mois", "Choisissez une année", "Choisissez une décénie", "Kies een Tijdstip"]
     });
 
@@ -133,9 +136,9 @@
      */
     datetime.strings.register("id", {
         months: ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"],
-        days:   ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"],
+        days: ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"],
         shorts: ["MIN", "SEN", "SEL", "RAB", "KAM", "JUM", "SAB"],
-        time:   ["Jam", "Menit", "Detik"],
+        time: ["Jam", "Menit", "Detik"],
         header: ["Pilih Bulan", "Pilih Tahun", "Pilih Dekade", "Pilih Jam"]
     });
 
@@ -145,9 +148,9 @@
      */
     datetime.strings.register("it", {
         months: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
-        days:   ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"],
+        days: ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"],
         shorts: ["DOM", "LUN", "MAR", "MER", "GIO", "VEN", "SAB"],
-        time:   ["Ore", "Minuti", "Secondi"],
+        time: ["Ore", "Minuti", "Secondi"],
         header: ["Seleziona un mese", "Seleziona un anno", "Seleziona un decennio", "Seleziona un orario"]
     });
 
@@ -157,9 +160,9 @@
      */
     datetime.strings.register("nl", {
         months: ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"],
-        days:   ["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"],
+        days: ["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"],
         shorts: ["ZO", "MA", "DI", "WO", "DO", "VR", "ZA"],
-        time:   ["Uur", "Minuten", "Seconden"],
+        time: ["Uur", "Minuten", "Seconden"],
         header: ["Kies een Maand", "Kies een Jaar", "Kies een Decennium", "Kies een Tijdstip"]
     });
 
@@ -169,9 +172,9 @@
      */
     datetime.strings.register("ko", {
         months: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
-        days:   ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"],
+        days: ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"],
         shorts: ["일", "월", "화", "수", "목", "금", "토"],
-        time:   ["시", "분", "초"], 
+        time: ["시", "분", "초"],
         header: ["월 선택", "연도 선택", "연대 선택", "시간 선택"]
     });
 
@@ -181,9 +184,9 @@
      */
     datetime.strings.register("no", {
         months: ["Januar", "Februar", "Mars", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Desember"],
-        days:   ["Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"],
+        days: ["Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"],
         shorts: ["SØN", "MAN", "TIR", "ONS", "TOR", "FRE", "LØR"],
-        time:   ["Timer", "Minutter", "Sekunder"],
+        time: ["Timer", "Minutter", "Sekunder"],
         header: ["Velg måned", "Velg år", "Velg tiår", "Velg klokkeslett"]
     });
 
@@ -193,9 +196,9 @@
      */
     datetime.strings.register("pl", {
         months: ["Styczeń", "Luty", "Marzec", "Kwiecień", "Maj", "Czerwiec", "Lipiec", "Sierpień", "Wrzesień", "Październik", "Listopad", "Grudzień"],
-        days:   ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"],
+        days: ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"],
         shorts: ["ND", "PN", "WT", "ŚR", "CZW", "PT", "SOB"],
-        time:   ["Godzina", "Minuta", "Sekunda"],
+        time: ["Godzina", "Minuta", "Sekunda"],
         header: ["Wybierz miesiąc", "Wybierz rok", "Wybierz dekadę", "Wybierz czas"]
     });
 
@@ -205,9 +208,9 @@
      */
     datetime.strings.register("pt_BR", {
         months: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
-        days:   ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"],
+        days: ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"],
         shorts: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
-        time:   ["Horas", "Minutos", "Segundos"],
+        time: ["Horas", "Minutos", "Segundos"],
         header: ["Escolha um mês", "Escolha um ano", "Escolha uma década", "Escolha um horário"]
     });
 
@@ -217,9 +220,9 @@
      */
     datetime.strings.register("ru", {
         months: ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"],
-        days:   ["воскресенье", "понедельник", "вторник", "среда","четверг","пятница","суббота",],
+        days: ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота", ],
         shorts: ["вс", "пн", "вт", "ср", "чт", "пт", "сб"],
-        time:   ["часов", "минут", "секунд"],
+        time: ["часов", "минут", "секунд"],
         header: ["Выберите месяц", "Выберите год", "Выберите Десятилетие", "Выберите время"]
     });
 
@@ -229,10 +232,22 @@
      */
     datetime.strings.register("tr", {
         months: ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"],
-        days:   ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"],
+        days: ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"],
         shorts: ["PA", "PT", "SA", "ÇA", "PE", "CU", "CT"],
-        time:   ["Saat", "Dakika", "Saniye"],
+        time: ["Saat", "Dakika", "Saniye"],
         header: ["Ay Seçin", "Yıl Seçin", "On Yıl Seçin", "Zaman Seçin"]
+    });
+
+    /*
+     |  Translator: Vatunyoo Suwannapisit - (https: //github.com/kerlos)
+     |  GitHub:         
+     */
+    datetime.strings.register("th", {
+        months: ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"],
+        days: ["อาทิตย์", "จันทร์", "อังคาร", "พุธ", "พฤหัส", "ศุกร์", "เสาร์"],
+        shorts: ["อา", "จ", "อ", "พ", "พฤ", "ศ", "ส"],
+        time: ["ชั่วโมง", "นาที", "วินาที"],
+        header: ["เลือกเดือน", "เลือกปี", "เลือกทศวรรษ", "เลือกเวลา"]
     });
     return datetime;
 }));
