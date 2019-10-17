@@ -236,8 +236,8 @@
     });
 
     /*
-     |  Translator: Vatunyoo Suwannapisit - (https: //github.com/kerlos)
-     |  GitHub:         
+     |  Translator:     Vatunyoo Suwannapisit - (https: //github.com/kerlos)
+     |  GitHub:         https://github.com/pytesNET/tail.DateTime/pull/84
      */
     datetime.strings.register("th", {
         months: ["มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"],

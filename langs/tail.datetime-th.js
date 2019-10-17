@@ -10,7 +10,7 @@
  */
 /*
  | Translator:      Vatunyoo Suwannapisit - (https: //github.com/kerlos)
- |  GitHub:         
+ |  GitHub:         https://github.com/pytesNET/tail.DateTime/pull/84
  */
 ;;
 (function (factory) {
